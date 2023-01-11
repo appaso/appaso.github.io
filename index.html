@@ -14,5 +14,12 @@
     <script src="__modules__.js"></script>
     <script src="__start__.js"></script>
     <script src="__loading__.js"></script>
+     var app = pc.Application.getApplication();
+    app.on("start", function () {
+        // get the root of the scene.
+        var hierarchy = app.root.getChildren()[0];
+
+        // do other stuff here
+    });
 </body>
 </html>
